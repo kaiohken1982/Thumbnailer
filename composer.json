@@ -1,0 +1,30 @@
+{
+    "name": "razor/thumbnailer",
+    "description": "A thumbnailer service module for Zend Framework 2.",
+    "type": "library",
+    "keywords": [
+        "zf2"
+    ],
+    "homepage": "https://github.com/kaiohken1982/Thumbnailer",
+    "authors": [
+        {
+            "name": "sergio Rinaudo",
+            "email": "sergio.rinaudo@gmail.com",
+            "homepage": "http://www.sergiorinaudo.com/"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "ext-gd": ">2"
+    },
+    "suggest": {
+    },
+    "autoload": {
+        "psr-0": {
+            "Thumbnailer": "src/"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
+    }
+}

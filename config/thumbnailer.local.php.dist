@@ -1,0 +1,7 @@
+<?php
+
+return array(
+    'thumbnailer' => array(
+        'quality' => 100
+    ),
+);
