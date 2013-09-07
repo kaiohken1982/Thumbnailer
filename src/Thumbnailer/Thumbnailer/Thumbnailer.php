@@ -237,10 +237,6 @@ class Thumbnailer
      */
     protected function initSourceImageResource() 
     { 
-    	if(null !== $this->sourceImageResource) {
-    		return $this->sourceImageResource;
-    	}
-    	
     	$ext = $this->getExtension();
     	
     	switch($ext) {
