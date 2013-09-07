@@ -1,9 +1,9 @@
 {
     "name": "razor/thumbnailer",
-    "description": "A thumbnailer service module for Zend Framework 2.",
+    "description": "An image thumbnailer service module for Zend Framework 2",
     "type": "library",
     "keywords": [
-        "zf2"
+        "zf2", "thumbnail", "watermark", "image", "crop"
     ],
     "homepage": "https://github.com/kaiohken1982/Thumbnailer",
     "authors": [
