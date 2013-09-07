@@ -15,7 +15,7 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "ext-gd": ">2"
+        "ext-gd": "*"
     },
     "suggest": {
     },
