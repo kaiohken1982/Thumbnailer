@@ -30,10 +30,3 @@ In a controller
 		$thumbnailer->resize(400);
 		$thumbnailer->save('\path\to\image_resized.png');
  ```
-
-### TODO
-
- ```
-Tests
-
- ```
