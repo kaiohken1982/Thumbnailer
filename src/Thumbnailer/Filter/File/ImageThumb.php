@@ -9,18 +9,29 @@ use Thumbnailer\Thumbnailer\Thumbnailer;
 class ImageThumb 
 	extends AbstractFilter
 {
-	protected $thumbnailer;
-	
+	/**
+	 * Filter options
+	 * @var array
+	 */
 	protected $options = array(
 		'thumbnailer' => null,
 		'thumbs' => array(150),
 	);
 	
+	/**
+	 * Set filter options
+	 * @param array $options
+	 */
 	public function __construct($options)
 	{
 		$this->options = $options;
 	}
 	
+	/**
+	 * Get the thumbnailer given with the options
+	 * @throws \Exception
+	 * @return Thumbnailer\Thumbnailer\Thumbnailer
+	 */
     protected function getThumbnailer()
     {
     	if(!$this->options['thumbnailer'] instanceof Thumbnailer) {
