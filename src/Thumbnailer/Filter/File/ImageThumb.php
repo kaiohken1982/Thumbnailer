@@ -28,16 +28,27 @@ class ImageThumb
 	}
 	
 	/**
-	 * Get the thumbnailer given with the options
+	 * Set the thumbnailer given with the options
 	 * @throws \Exception
-	 * @return Thumbnailer\Thumbnailer\Thumbnailer
+	 * @return Cropper\Filter\File\ImageCrop
 	 */
-    protected function getThumbnailer()
+    protected function setThumbnailer(Thumbnailer $thumbnailer)
     {
-    	if(!$this->options['thumbnailer'] instanceof Thumbnailer) {
+    	if(!$thumbnailer instanceof Thumbnailer) {
     		throw new \Exception('The thumbnailer service given is not instance of Thumbnailer\Thumbnailer\Thumbnailer');
     	}
-        return $this->options['thumbnailer'];
+        $this->options['thumbnailer'] = $thumbnailer;
+        
+        return $this;
+    }
+    
+    /**
+     * Get thumbnailer service
+     * @return Thumbnailer\Thumbnailer\Thumbnailer;
+     */
+    protected function getThumbnailer() 
+    {
+    	return $this->options['thumbnailer'];
     }
     
     /**
