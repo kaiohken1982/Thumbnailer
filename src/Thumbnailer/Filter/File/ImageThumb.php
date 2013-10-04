@@ -11,28 +11,22 @@ class ImageThumb
 {
 	protected $thumbnailer;
 	
-	protected $options = array();
+	protected $options = array(
+		'thumbnailer' => null,
+		'thumbs' => array(150),
+	);
 	
 	public function __construct($options)
 	{
-		if(isset($options['thumbnailer'])) {
-			$this->setThumbnailer($options['thumbnailer']);
-			unset($options['thumbnailer']);
-		}
-		
 		$this->options = $options;
 	}
 	
-    protected function setThumbnailer(Thumbnailer $thumbnailer)
-    {
-        $this->thumbnailer = $thumbnailer;
-        
-        return $this;
-    }
-	
     protected function getThumbnailer()
     {
-        return $this->thumbnailer;
+    	if(!$this->options['thumbnailer'] instanceof Thumbnailer) {
+    		throw new \Exception('The thumbnailer service given is not instance of Thumbnailer\Thumbnailer\Thumbnailer');
+    	}
+        return $this->options['thumbnailer'];
     }
     
     /**
@@ -45,11 +39,7 @@ class ImageThumb
      */
     protected function getThumbs() 
     {
-    	if(isset($this->options['thumbs'])) {
-    		return $this->options['thumbs'];
-    	}
-    	
-    	return array(150);
+    	return $this->options['thumbs'];
     }
 	
     /**
