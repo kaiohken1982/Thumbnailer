@@ -46,7 +46,7 @@ class ImageThumb
     protected function getThumbs() 
     {
     	if(isset($this->options['thumbs'])) {
-    		return $this->options['thumbnailer'];
+    		return $this->options['thumbs'];
     	}
     	
     	return array(150);
