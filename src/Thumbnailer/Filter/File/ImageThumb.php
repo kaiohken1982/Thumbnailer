@@ -24,7 +24,7 @@ class ImageThumb
 	 */
 	public function __construct($options)
 	{
-		$this->options = array_merge($this->options, $options);
+		$this->setOptions($options);
 	}
 	
 	/**
