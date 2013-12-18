@@ -35,7 +35,7 @@ In a controller
  
 ### Run unit test
  
-Please note you mut be in the module root.
+Please note you must be in the module root.
 
 ```
 curl -s http://getcomposer.org/installer | php
