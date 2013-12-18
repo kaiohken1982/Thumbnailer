@@ -30,3 +30,14 @@ In a controller
 		$thumbnailer->resize(400);
 		$thumbnailer->save('\path\to\image_resized.png');
  ```
+ 
+### Run unit test
+ 
+Please note you mut be in the module root.
+
+```
+curl -s http://getcomposer.org/installer | php
+php composer.phar install
+cd tests
+../vendor/bin/phpunit -c phpunit.xml
+```

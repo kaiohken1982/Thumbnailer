@@ -15,7 +15,11 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "ext-gd": "*"
+        "ext-gd": "*",
+        "zendframework/zendframework": "2.*"
+    },
+    "require-dev": {
+		"phpunit/phpunit" : "3.7.*"
     },
     "suggest": {
     },

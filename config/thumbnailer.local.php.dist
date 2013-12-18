@@ -2,6 +2,6 @@
 
 return array(
     'thumbnailer' => array(
-        'quality' => 100
+        'quality' => 60
     ),
 );
