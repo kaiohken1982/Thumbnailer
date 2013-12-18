@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/kaiohken1982/Thumbnailer.png)](https://travis-ci.org/kaiohken1982/Thumbnailer) - [![Dependency Status](https://www.versioneye.com/user/projects/52b17633ec1375723700004e/badge.png)](https://www.versioneye.com/user/projects/52b17633ec1375723700004e)
+
 Image Thumbnailer Module
 ========================
 
