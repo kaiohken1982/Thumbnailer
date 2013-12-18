@@ -17,7 +17,8 @@ class ThumbnailerTest
 	
 	protected function setUp()
 	{
-		$this->testImagePath = dirname(__DIR__) . '\\..\\data\\';
+		$this->testImagePath = dirname(__DIR__) . DIRECTORY_SEPARATOR . '..' 
+		    . DIRECTORY_SEPARATOR . 'data' . DIRECTORY_SEPARATOR;
 		$this->obj = new Thumbnailer();
 		$this->obj->open($this->testImagePath . $this->testImageName);
 	}
