@@ -41,5 +41,5 @@ Please note you mut be in the module root.
 curl -s http://getcomposer.org/installer | php
 php composer.phar install
 cd tests
-../vendor/bin/phpunit -c phpunit.xml
+../vendor/bin/phpunit -c phpunit.xml.dist
 ```

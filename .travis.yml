@@ -12,4 +12,5 @@ before_script:
   - curl -s http://getcomposer.org/installer | php
   - php composer.phar install --prefer-dist --dev
   - cd test
+  - ../vendor/bin/phpunit -c phpunit.xml.dist 
   
