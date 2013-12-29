@@ -1,7 +1,11 @@
-[![Build Status](https://travis-ci.org/kaiohken1982/Thumbnailer.png)](https://travis-ci.org/kaiohken1982/Thumbnailer) - [![Dependency Status](https://www.versioneye.com/user/projects/52b17633ec1375723700004e/badge.png)](https://www.versioneye.com/user/projects/52b17633ec1375723700004e)
-
 Image Thumbnailer Module
 ========================
+
+[![Build Status](https://travis-ci.org/kaiohken1982/Thumbnailer.png)](https://travis-ci.org/kaiohken1982/Thumbnailer)
+[![Dependency Status](https://www.versioneye.com/user/projects/52b17633ec1375723700004e/badge.png)](https://www.versioneye.com/user/projects/52b17633ec1375723700004e)
+[![Latest Stable Version](https://poser.pugx.org/razor/thumbnailer/v/stable.png)](https://packagist.org/packages/razor/thumbnailer)
+[![Total Downloads](https://poser.pugx.org/razor/thumbnailer/downloads.png)](https://packagist.org/packages/razor/thumbnailer)
+[![Latest Unstable Version](https://poser.pugx.org/razor/thumbnailer/v/unstable.png)](https://packagist.org/packages/razor/thumbnailer)
 
 An image thumbnailer service module for Zend Framework 2
 
