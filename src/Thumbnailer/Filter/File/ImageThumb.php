@@ -32,7 +32,7 @@ class ImageThumb
 	 * @throws \Exception
 	 * @return Cropper\Filter\File\ImageCrop
 	 */
-    protected function setThumbnailer(Thumbnailer $thumbnailer)
+    public function setThumbnailer(Thumbnailer $thumbnailer)
     {
     	if(!$thumbnailer instanceof Thumbnailer) {
     		throw new \Exception('The thumbnailer service given is not instance of Thumbnailer\Thumbnailer\Thumbnailer');
@@ -46,7 +46,7 @@ class ImageThumb
      * Get thumbnailer service
      * @return Thumbnailer\Thumbnailer\Thumbnailer;
      */
-    protected function getThumbnailer() 
+    public function getThumbnailer() 
     {
     	return $this->options['thumbnailer'];
     }

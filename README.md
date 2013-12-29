@@ -47,4 +47,23 @@ curl -s http://getcomposer.org/installer | php
 php composer.phar install
 cd tests
 ../vendor/bin/phpunit -c phpunit.xml.dist
+
+### Run unit test
+ 
+Please note you must be in the module root.
+
+```
+curl -s http://getcomposer.org/installer | php
+php composer.phar install
+cd tests
+../vendor/bin/phpunit 
+```
+
+If you have xdebug enabled and you want to see code coverage 
+run the command below, it'll create html files in 
+Watermarker\test\data\coverage
+
+```
+../vendor/bin/phpunit --coverage-html data/coverage
+```
 ```
