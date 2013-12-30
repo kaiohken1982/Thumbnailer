@@ -34,9 +34,6 @@ class ImageThumb
 	 */
     public function setThumbnailer(Thumbnailer $thumbnailer)
     {
-    	if(!$thumbnailer instanceof Thumbnailer) {
-    		throw new \Exception('The thumbnailer service given is not instance of Thumbnailer\Thumbnailer\Thumbnailer');
-    	}
         $this->options['thumbnailer'] = $thumbnailer;
         
         return $this;
@@ -59,7 +56,7 @@ class ImageThumb
      * 
      * @return array
      */
-    protected function getThumbs() 
+    public function getThumbs() 
     {
     	return $this->options['thumbs'];
     }

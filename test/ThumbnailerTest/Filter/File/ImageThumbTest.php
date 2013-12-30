@@ -11,9 +11,11 @@ class ImageThumbTest
 {
 	protected $obj;
 	
+	protected $thumbs = array(300, 400, 500);
+	
 	protected function setUp()
 	{
-	    $options = array('thumbnailer' => new Thumbnailer());
+	    $options = array('thumbnailer' => new Thumbnailer(), 'thumbs' => $this->thumbs);
 		$this->obj = new ImageThumb($options);
 	}
 	
@@ -45,5 +47,17 @@ class ImageThumbTest
 	    $path = dirname(dirname(dirname(__DIR__))) . 
 	        DIRECTORY_SEPARATOR . 'data' . DIRECTORY_SEPARATOR . 'berserk.png';
 	    $this->obj->filter($path);
+	    
+	    $data = array('tmp_name' => $path);
+	    $this->obj->filter($data);
+	}
+
+	/**
+	 * @covers \Thumbnailer\Filter\File\ImageThumb::getThumbs()
+	 */
+	public function testGetterSetterThumbs() 
+	{
+	    $thumbs = $this->obj->getThumbs();
+	    $this->assertTrue($thumbs === $this->thumbs);
 	}
 }
