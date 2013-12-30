@@ -5,6 +5,8 @@
 		<blacklist>
 	        <directory>../vendor/*</directory>
 	        <directory>../test/*</directory>
+	        <directory>../src/*Exception.php</directory>
+	        <directory>../src/*Interface.php</directory>
 	    </blacklist>
 	    <whitelist>
 	        <directory>../src/*</directory>
