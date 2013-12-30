@@ -2,6 +2,7 @@
     "name": "razor/thumbnailer",
     "description": "An image thumbnailer service module for Zend Framework 2",
     "type": "library",
+    "license": "MIT",
     "keywords": [
         "zf2", "thumbnail", "watermark", "image", "crop"
     ],
