@@ -15,16 +15,12 @@ notifications:
 before_script:
   - curl -s http://getcomposer.org/installer | php
   - php composer.phar install --prefer-dist --dev
-  - cd test
-  - ../vendor/bin/phpunit -c phpunit.xml.dist 
   
 script:
   - mkdir -p build/logs
-  - cd test
-  - ../vendor/bin/phpunit --coverage-clover ../build/logs/clover.xml
+  - ./vendor/bin/phpunit --coverage-clover ./build/logs/clover.xml
 
-after_success:
-  - cd ..
+after_script:
   - php vendor/bin/coveralls -v
 
   
