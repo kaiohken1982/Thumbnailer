@@ -46,6 +46,7 @@ Please note you must be in the module root.
 curl -s http://getcomposer.org/installer | php
 php composer.phar install
 ./vendor/bin/phpunit -c phpunit.xml.dist
+```
 
 ### Run unit test
  
@@ -63,5 +64,4 @@ Watermarker\test\data\coverage
 
 ```
 ./vendor/bin/phpunit --coverage-html data/coverage
-```
 ```
