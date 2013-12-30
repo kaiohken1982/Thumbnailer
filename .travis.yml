@@ -23,7 +23,7 @@ script:
   - cd test
   - ../vendor/bin/phpunit --coverage-clover ../build/logs/clover.xml
 
-after_script:
+after_success:
   - cd ..
   - php vendor/bin/coveralls -v
 
