@@ -8,8 +8,8 @@ Image Thumbnailer Module
 [![Total Downloads](https://poser.pugx.org/razor/thumbnailer/downloads.png)](https://packagist.org/packages/razor/thumbnailer)
 [![Latest Unstable Version](https://poser.pugx.org/razor/thumbnailer/v/unstable.png)](https://packagist.org/packages/razor/thumbnailer)
 
-An image thumbnailer service module for Zend Framework 2.
-There is also available a form filter that uses this module internally.
+> An image thumbnailer service module for Zend Framework 2.
+> There is also available a form filter that internally uses the Thumbnailer service.
 
 ### Install with Composer
  ```
